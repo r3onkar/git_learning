@@ -1,0 +1,15 @@
+hello
+
+creating branch againest exting branch
+
+git checkout - myfeature dev
+
+git checkout -b myfeature branch2
+----------------------------------
+git brach rename in local
+
+git branch -m <newname>
+
+------------------------------------
+fetch all branch to local
+ git fetch --all && git pull --all && git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
